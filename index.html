@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+
+  <!--Page Information-->
+  <meta charset="UTF-8">
+  <meta name="description" content="An app to keep a list of all your favourites artist and song names.">
+  <meta name="author" content="Harpreet Kaur">
+
+  <!--Locks the size of the page on the devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Title of the page-->
+  <title>Emco Cooperation </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--Link the Web App Manifest-->
+
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" type="image/png" sizes="196x196" href="/icons/favicon-196.png">
+  <meta name="msapplication-square70x70logo" content="/icons/mstile-icon-128.png">
+  <meta name="msapplication-square150x150logo" content="/icons/mstile-icon-270.png">
+  <meta name="msapplication-square310x310logo" content="/icons/mstile-icon-558.png">
+  <meta name="msapplication-wide310x150logo" content="/icons/mstile-icon-558-270.png">
+  <link rel="apple-touch-icon" href="/icons/apple-icon-180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2048-2732.jpg"
+    media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2732-2048.jpg"
+    media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1668-2388.jpg"
+    media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2388-1668.jpg"
+    media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1536-2048.jpg"
+    media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2048-1536.jpg"
+    media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1488-2266.jpg"
+    media="(device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2266-1488.jpg"
+    media="(device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1640-2360.jpg"
+    media="(device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2360-1640.jpg"
+    media="(device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1668-2224.jpg"
+    media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2224-1668.jpg"
+    media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1620-2160.jpg"
+    media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2160-1620.jpg"
+    media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1290-2796.jpg"
+    media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2796-1290.jpg"
+    media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1179-2556.jpg"
+    media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2556-1179.jpg"
+    media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1284-2778.jpg"
+    media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2778-1284.jpg"
+    media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1170-2532.jpg"
+    media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2532-1170.jpg"
+    media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1125-2436.jpg"
+    media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2436-1125.jpg"
+    media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1242-2688.jpg"
+    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2688-1242.jpg"
+    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-828-1792.jpg"
+    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1792-828.jpg"
+    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1242-2208.jpg"
+    media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2208-1242.jpg"
+    media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-750-1334.jpg"
+    media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1334-750.jpg"
+    media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-640-1136.jpg"
+    media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1136-640.jpg"
+    media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-app-title" content="Music app">
+  <meta name="theme-color" content="#1db954">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main>
+    <header>
+        <div class="header-section">
+            <img id="header-image" src="/assets/Transparent-RGB-Emco-Corporation-DB.webp">
+            <ul id="menu-list">
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">HOMEOWNERS</a></li>
+                <li><a href="#">PROFESSIONALS</a></li>
+                <li><a href="#">VENDORS</a></li>
+                <li><a href="#">LOCATIONS</a></li>
+                <li><a href="#">CAREERS</a></li>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </ul>
+        </div>
+    </header>
+    <section>
+      <div class="carousel-container">
+          <div class="carousel">
+              <div class="slide">
+                  <img src="/assets/pexels-falling4utah-2724749.jpg" alt="Image 1">
+                  <div class="text-overlay">Text for Image 1</div>
+              </div>
+              <div class="slide">
+                  <img src="/assets/pexels-heyho-6207818.jpg" alt="Image 2">
+                  <div class="text-overlay">Text for Image 2</div>
+              </div>
+              <div class="slide">
+                  <img src="/assets/pexels-heyho-6489127.jpg" alt="Image 3">
+                  <div class="text-overlay">Text for Image 3</div>
+              </div>
+              <div class="slide">
+                  <img src="/assets/pexels-falling4utah-2724749.jpg" alt="Image 4">
+                  <div class="text-overlay">Text for Image 4</div>
+              </div>
+              <div class="slide">
+                  <img src="/assets/pexels-falling4utah-2724749.jpg" alt="Image 5">
+                  <div class="text-overlay">Text for Image 5</div>
+              </div>
+          </div>
+  
+          <!-- Navigation Arrows -->
+          <button class="arrow prev" onclick="prevSlide()">&#10094;</button>
+          <button class="arrow next" onclick="nextSlide()">&#10095;</button>
+      </div>
+  </section>
+    <section>
+        <div class="nav-bar ">
+          <a href="#"><img src="/assets/plumbing_icon-1.webp"></a>
+          <a href="#"><img src="/assets/HVACR_icon.webp"></a>
+          <a href="#"><img src="/assets/Industrial_icon-1.webp"></a>
+          <a href="#"><img src="/assets/waterworks_icon-1.webp"></a>
+          <a href="#"><img src="/assets/div_firepro.webp"></a>
+          <a href="#"><img src="/assets/Showroom_icon-1.webp"></a>
+        </div>
+    </section>
+    <section>
+        <div class="block-container">
+            <div class="signup">
+                <h2>SIGN UP TODAY</h2>
+                <p>Experience the exceptional value we provide first hand! Complete</p><p>our credit application and send it to your local Profit Centre </p>
+                <button>APPLY TODAY</button>
+            </div>
+            <div class="order-online">
+                <h2>ORDER ONLINE</h2>
+                <p>Enjoy the convenience and ease of ordering your product online by</p> <p>registering an account with our online order tool! </p>
+                <button>GET STARTED!</button>
+            </div>
+        </div>
+    </section>
+    <section>
+      <div class="service-section">
+        <h3>CUSTOMER SERVICE</h3>
+        <p>Good customer service means quality of work; exceptional customer service means quality of people. We’re a people business. We’re all about you</p>
+      </div>
+    </section>
+    <section>
+      <div class="delivery-service">
+        <h3>IN-TIME DELIVERY</h3>
+        <p>Whatever the project large or small, we have the team and experience to help you get it done right and on-time.</p>
+      </div>
+    </section>
+    <section>
+      <div class="career">
+        <h3>JOIN OUR TEAM</h3>
+        <h5>We are always looking for exceptional talent to join our growing team – have a look at our current opportunities!</h5>
+        <button>VIEW OPPORTUNITIES</button>
+      </div>
+    </section>
+    <footer>
+      <section>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Legal Notice</a></li>
+          <li><a href="#"> Accessibility</a></li>
+          <li><a href="#"> Terms</a></li>
+          <li><a href="#">Ethics and Compliance Reporting</a></li>
+          <li><a href="#">Modern Slavery Report</a></li>
+        </ul>
+      </section>
+    </footer>
+</main>
+<script src="/script.js"></script> <!-- External JavaScript -->
+</body>
+</html>

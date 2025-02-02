@@ -263,7 +263,7 @@ header {
 
 
 .service-section {
-    background: url('/Emco_clone/assets/pexels-shkrabaanthony-5486148.jpg') center/cover no-repeat; /* Add your background image */
+    background: url('/assets/pexels-shkrabaanthony-5486148.jpg') center/cover no-repeat; /* Add your background image */
     color: white; /* Text color */
     text-align: center; /* Center text */
     padding: 50px 20px; /* Adds spacing */
@@ -271,7 +271,7 @@ header {
     height: 400px;
 }
 .delivery-service {
-    background: url('/Emco_clone/assets/pexels-polina-tankilevitch-4440774.jpg') center/cover no-repeat; /* Add your background image */
+    background: url('/assets/pexels-polina-tankilevitch-4440774.jpg') center/cover no-repeat; /* Add your background image */
     color: white; 
     text-align: center; 
     padding: 50px 20px; 
@@ -279,7 +279,7 @@ header {
     height: 400px;
 }
 .career {
-    background: url('/Emco_clone/assets/1686237867535.jpeg') center/cover no-repeat; /* Add your background image */
+    background: url('/assets/1686237867535.jpeg') center/cover no-repeat; /* Add your background image */
     color: white; 
     text-align: center; 
     padding: 50px 20px; 

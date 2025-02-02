@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+
+  <!--Page Information-->
+  <meta charset="UTF-8">
+  <meta name="description" content="An app to keep a list of all your favourites artist and song names.">
+  <meta name="author" content="Harpreet Kaur">
+
+  <!--Locks the size of the page on the devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Title of the page-->
+  <title>Emco Cooperation </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--Link the Web App Manifest-->
+
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" type="image/png" sizes="196x196" href="/icons/favicon-196.png">
+  <meta name="msapplication-square70x70logo" content="/icons/mstile-icon-128.png">
+  <meta name="msapplication-square150x150logo" content="/icons/mstile-icon-270.png">
+  <meta name="msapplication-square310x310logo" content="/icons/mstile-icon-558.png">
+  <meta name="msapplication-wide310x150logo" content="/icons/mstile-icon-558-270.png">
+  <link rel="apple-touch-icon" href="/icons/apple-icon-180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2048-2732.jpg"
+    media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2732-2048.jpg"
+    media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1668-2388.jpg"
+    media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2388-1668.jpg"
+    media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1536-2048.jpg"
+    media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2048-1536.jpg"
+    media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1488-2266.jpg"
+    media="(device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2266-1488.jpg"
+    media="(device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1640-2360.jpg"
+    media="(device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2360-1640.jpg"
+    media="(device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1668-2224.jpg"
+    media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2224-1668.jpg"
+    media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1620-2160.jpg"
+    media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2160-1620.jpg"
+    media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1290-2796.jpg"
+    media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2796-1290.jpg"
+    media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1179-2556.jpg"
+    media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2556-1179.jpg"
+    media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1284-2778.jpg"
+    media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2778-1284.jpg"
+    media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1170-2532.jpg"
+    media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2532-1170.jpg"
+    media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1125-2436.jpg"
+    media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2436-1125.jpg"
+    media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1242-2688.jpg"
+    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2688-1242.jpg"
+    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-828-1792.jpg"
+    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1792-828.jpg"
+    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1242-2208.jpg"
+    media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2208-1242.jpg"
+    media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-750-1334.jpg"
+    media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1334-750.jpg"
+    media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-640-1136.jpg"
+    media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1136-640.jpg"
+    media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-app-title" content="Music app">
+  <meta name="theme-color" content="#1db954">
+  <link rel="stylesheet" href="/Emco_clone/css/bathroom.css">
+</head>
+<body> 
+  <main>
+    <header>
+      <div class="header-section">
+          <img id="header-image" src="/assets/Transparent-RGB-Emco-Corporation-DB.webp">
+          <ul id="menu-list">
+            <li><a href="/Emco_clone/pages/about.html">ABOUT US</a></li>
+            <li><a href="/Emco_clone/pages/homeowners.html">HOMEOWNERS</a></li>
+            <li class="dropdown">
+                <a href="#">PROFESSIONALS</a>
+                <ul class="dropdown-content">
+                    <li><a href="/Emco_clone/pages/HVAC-R.html">HVAC-R</a></li>
+                    <li><a href="/Emco_clone/pages/plumbing.html">Plumbing</a></li>
+                    <li><a href="/Emco_clone/pages/fire.html">Fire Protection</a></li>
+                    <li><a href="/Emco_clone/pages/industrial.html">Industrial</a></li>
+                </ul>
+            </li>
+            <li><a href="https://emco.ca/industry-partners/"  target="_blank">VENDORS</a></li>
+            <li><a href="/Emco_clone/pages/location.html">LOCATIONS</a></li>
+            <li><a href="https://careers.smartrecruiters.com/EMCOCorporation" target="_blank">CAREERS</a></li>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </ul>
+        
+      </div>
+  </header>
+<section>
+<div class="bathroom-section">
+  <img id="bathroom-1" src="/Emco_clone/assets/bath1.jpg">
+  <img id="bathroom"  src="/Emco_clone/assets/bath2.jpg">
+</div>
+</section>
+<section>
+<div class="bathroom-section">
+  <img id="bathroom-3" src="/Emco_clone/assets/bath3.jpg">
+  <img id="bathroom-4" src="/Emco_clone/assets/bath4.jpg">
+</div>
+</section>
+<section >
+<div class="bathroom-section">
+  <img id="bathroom-5" src="/Emco_clone/assets/bath5.jpg">
+  <img id="bathroom-6" src="/Emco_clone/assets/bath6.jpg">
+</div>
+</section>
+<section>
+<div class="bathroom-section">
+  <img id="bathroom-7" src="/Emco_clone/assets/bath7.jpg">
+  <img id="bathroom-8" src="/Emco_clone/assets/bath8.jpg">
+</div>
+</section>
+<section>
+<h4 id="center-heading">Enjoy a luxurious spa experience at home!</h4>
+<p class="center-para">Spend some time in one of Emco’s well-appointed showrooms where you can see and feel the beauty and quality of our bathroom products. Vignette displays provide </p>
+<p class="center-para">inspiration for your bathroom project and our showroom consultants can share their design knowledge to help you realize your vision.</p>
+</section>
+<section>
+<div class="search-form">
+  <form>
+    <div class="inline-group">
+      <label for="location">Your Location</label>
+      <input id="location" placeholder="Fetching..." readonly>
+
+      <label for="search-radius">Search Radius</label>
+      <select id="search-radius">
+        <option value="10">10 km</option>
+        <option value="20">20 km</option>
+        <option value="50">50 km</option>
+        <option value="100">100 km</option>
+        <option value="200">200 km</option>
+        <option value="500">500 km</option>
+      </select>
+
+      <label for="results">Results</label>
+      <select id="results">
+        <option value="25">25</option>
+        <option value="50">50</option>
+        <option value="75">75</option>
+        <option value="100">100</option>
+      </select>
+    </div>
+
+    <div class="inline-group">
+      <label for="categories">Categories</label>
+      <select id="categories">
+        <option value="any">Any</option>
+        <option value="firepro">Firepro</option>
+        <option value="hvac">HVAC-R</option>
+        <option value="showroom">Showroom</option>
+        <option value="plumbing">Plumbing</option>
+        <option value="waterworks">Waterworks</option>
+        <option value="industrial">Industrial</option>
+      </select>
+
+      <button type="submit">Search</button>
+    </div>
+  </form>
+</div>
+</section>
+<section class="location-section">
+<!-- Left Side: Showroom Info -->
+<div class="location-info">
+    <h3>
+        <a href="https://www.google.com/maps?q=Ensuite+Showroom+London" target="_blank">
+            Ensuite Showroom London
+        </a>
+    </h3>
+    <p>944 Leathorne Street</p>
+    <p>London, Ontario N5Z 3M5</p>
+    <p>Canada</p>
+    <p><strong>T:</strong> 
+        <a href="tel:+15194573626">519-457-3626</a>
+    </p>
+    <p><strong>5.1 km</strong></p>
+    <button class="directions-link" onclick="openGoogleMaps()">Get Directions</button>
+</div>
+
+<!-- Right Side: Google Map -->
+<div class="location-map">
+    <iframe
+        width="100%"
+        height="350"
+        frameborder="0"
+        style="border: 0; border-radius: 5px;"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.345417522726!2d-81.21649342349935!3d42.96038060000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef2556f9a3499%3A0xa3c826f9b44f4bb2!2sEnsuite%20Showroom%20London!5e0!3m2!1sen!2sca!4v1706789212891">
+    </iframe>
+</div>
+</section>
+</section>
+
+<footer>
+  <div class="footer-content">
+      <a href="#">Privacy</a>
+      <a href="#">Legal Notice</a>
+      <a href="#"> Accessibility</a>
+      <a href="#"> Terms</a>
+      <a href="#">Ethics and Compliance Reporting</a>
+      <a href="#">Modern Slavery Report</a>
+  </div>
+</footer>
+</main>
+<script src="/Emco_clone/script.js"></script> <!-- External JavaScript -->
+</body>
+</html>

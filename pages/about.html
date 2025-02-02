@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+
+  <!--Page Information-->
+  <meta charset="UTF-8">
+  <meta name="description" content="An app to keep a list of all your favourites artist and song names.">
+  <meta name="author" content="Harpreet Kaur">
+
+  <!--Locks the size of the page on the devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Title of the page-->
+  <title>Emco Cooperation </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--Link the Web App Manifest-->
+
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" type="image/png" sizes="196x196" href="/icons/favicon-196.png">
+  <meta name="msapplication-square70x70logo" content="/icons/mstile-icon-128.png">
+  <meta name="msapplication-square150x150logo" content="/icons/mstile-icon-270.png">
+  <meta name="msapplication-square310x310logo" content="/icons/mstile-icon-558.png">
+  <meta name="msapplication-wide310x150logo" content="/icons/mstile-icon-558-270.png">
+  <link rel="apple-touch-icon" href="/icons/apple-icon-180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2048-2732.jpg"
+    media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2732-2048.jpg"
+    media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1668-2388.jpg"
+    media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2388-1668.jpg"
+    media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1536-2048.jpg"
+    media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2048-1536.jpg"
+    media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1488-2266.jpg"
+    media="(device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2266-1488.jpg"
+    media="(device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1640-2360.jpg"
+    media="(device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2360-1640.jpg"
+    media="(device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1668-2224.jpg"
+    media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2224-1668.jpg"
+    media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1620-2160.jpg"
+    media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2160-1620.jpg"
+    media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1290-2796.jpg"
+    media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2796-1290.jpg"
+    media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1179-2556.jpg"
+    media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2556-1179.jpg"
+    media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1284-2778.jpg"
+    media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2778-1284.jpg"
+    media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1170-2532.jpg"
+    media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2532-1170.jpg"
+    media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1125-2436.jpg"
+    media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2436-1125.jpg"
+    media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1242-2688.jpg"
+    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2688-1242.jpg"
+    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-828-1792.jpg"
+    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1792-828.jpg"
+    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1242-2208.jpg"
+    media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-2208-1242.jpg"
+    media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-750-1334.jpg"
+    media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1334-750.jpg"
+    media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-640-1136.jpg"
+    media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="/icons/apple-splash-1136-640.jpg"
+    media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-app-title" content="Music app">
+  <meta name="theme-color" content="#1db954">
+  <link rel="stylesheet" href="/Emco_clone/css/about.css">
+</head>
+<body>
+    <main>
+      <header>
+        <div class="header-section">
+            <img id="header-image" src="/assets/Transparent-RGB-Emco-Corporation-DB.webp">
+            <ul id="menu-list">
+              <li><a href="/Emco_clone/pages/about.html">ABOUT US</a></li>
+              <li><a href="/Emco_clone/pages/homeowners.html">HOMEOWNERS</a></li>
+              <li class="dropdown">
+                  <a href="#">PROFESSIONALS</a>
+                  <ul class="dropdown-content">
+                      <li><a href="/Emco_clone/pages/HVAC-R.html">HVAC-R</a></li>
+                      <li><a href="/Emco_clone/pages/plumbing.html">Plumbing</a></li>
+                      <li><a href="/Emco_clone/pages/fire.html">Fire Protection</a></li>
+                      <li><a href="/Emco_clone/pages/industrial.html">Industrial</a></li>
+                  </ul>
+              </li>
+              <li><a href="https://emco.ca/industry-partners/"  target="_blank">VENDORS</a></li>
+              <li><a href="/Emco_clone/pages/location.html">LOCATIONS</a></li>
+              <li><a href="https://careers.smartrecruiters.com/EMCOCorporation" target="_blank">CAREERS</a></li>
+              <i class="fa-solid fa-magnifying-glass"></i>
+          </ul>
+          
+        </div>
+    </header>
+        <section>
+          <div class="carousel-container">
+              <div class="carousel">
+                  <div class="slide">
+                      <img src="/assets/pexels-falling4utah-2724749.jpg" alt="Image 1" class="carousel-image image-1">
+                  </div>
+                  <div class="slide">
+                      <img src="/assets/pexels-heyho-6207818.jpg" alt="Image 2" class="carousel-image image-2">
+                  </div>
+                  <div class="slide">
+                      <img src="/assets/pexels-heyho-6489127.jpg" alt="Image 3" class="carousel-image image-3">
+                  </div>
+                  <div class="slide">
+                      <img src="/assets/pexels-falling4utah-2724749.jpg" alt="Image 4" class="carousel-image image-4">
+                  </div>
+                  <div class="slide">
+                      <img src="/assets/pexels-falling4utah-2724749.jpg" alt="Image 5" class="carousel-image image-5">
+                  </div>
+              </div>
+      
+              <!-- Navigation Arrows -->
+              <button class="arrow prev" onclick="prevSlide()">&#10094;</button>
+              <button class="arrow next" onclick="nextSlide()">&#10095;</button>
+      
+              <!-- Single Text Overlay for all images -->
+              <div class="text-overlay">Your Text Here</div>
+          </div>
+      </section>
+      
+        <section>
+            <div class="nav-bar ">
+              <a href="#"><img src="/Emco_clone/assets/logo1.jpg"></a>
+              <a href="#"><img src="/Emco_clone/assets/logo2.jpg"></a>
+              <a href="#"><img src="/Emco_clone/assets/logo3.jpg"></a>
+              <a href="#"><img src="/Emco_clone/assets/logo4.jpg"></a>
+              <a href="#"><img src="/Emco_clone/assets/logo6.jpg"></a>
+              <a href="#"><img src="/Emco_clone/assets/logo7.jpg"></a>
+            </div>
+        </section>
+        <section>
+          <div class="certificate">
+              <div class="certificate-image">
+                  <img src="/Emco_clone/assets/cetified.jpg" alt="Certified Image">
+              </div>
+              <div class="description-certification">
+                  <p>Founded as the Empire Manufacturing Company Limited in London, Ontario in 1906,
+                      Emco Corporation is one of the oldest members of the construction market in Canada.
+                      On May 28, 2016, we celebrated 110 years of business success! This is no small 
+                      accomplishment for a company that has witnessed two world wars and the Great Depression.</p>
+                  <p>The key to EMCO’s business has been our people. Our business is driven by Profit
+                      Centres which operate at the local level, led by world-class leaders.</p>
+                  <p>We have a network of over 250 Profit Centres thanks to the entrepreneurial 
+                      spirit of our people. Our Profit Centres are strategically located and represent 
+                      the top product lines in our industry. They are set up to ensure we always provide excellent service to our customers.</p>
+                  <p>EMCO Corporation is one of Canada’s largest integrated distributors of products for
+                      the construction industry. EMCO offers products in the distinct categories of plumbing, 
+                      waterworks, industrial and HVAC. We strive to satisfy the needs of our customers with a 
+                      focused product assortment, transported and sold through an extensive network of Profit 
+                      Centres, distribution warehouses and showrooms across Canada.</p>
+              </div>
+          </div>
+      </section>
+      <section>
+        <div class="mission-vision">
+            <div class="mission">
+                <h3>OUR MISSION</h3>
+                <p>Emco strives to provide world-class service at every location, every day. 
+                    We want to earn – and keep – your business and we’re committed to supporting 
+                    your needs long term. We’re not just saying this. Our legacy goes back a century! 
+                    And, today, we continue to offer the people, places and products to back those commitments up.</p>
+                <ul>
+                    <h4>Our mission is to be the first choice distributor for:</h4>
+                    <li>Our partners</li>
+                    <li>Our business owners and homeowners</li>
+                    <li>Our neighbours</li>
+                    <li>Our communities</li>
+                </ul>
+            </div>
+            <div class="vision">
+                <h3>OUR VISION</h3>
+                <h3>Total customer satisfaction…always.</h3>
+                <p>At Emco, we believe every customer’s needs are important and unique and we use this as
+                     a guiding principle to stock our shelves. We understand your time is limited. 
+                     You need a one-stop-shop with depth and breadth to meet your diverse needs. 
+                     We get it…and we’ve got it! We carry a wide array of plumbing, HVAC, 
+                     industrial and waterworks supplies from leading manufacturers..</p>
+                <p>What’s more, we understand you’ve got to trust the people you work with. 
+                    Our team goes the extra mile to get the job done and provide quality products. 
+                    We’ve also got more than a century of experience we draw on for anything else you need.
+                     Technical advice and training? Check! After-hours emergency supply? No problem! 
+                     We’re dedicated to helping you succeed.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+      <h3 class="core-value-title">CORE VALUE</h3>
+      <div class="core-value">
+          <img src="/Emco_clone/assets/caring.jpg" alt="Caring">
+          <img src="/Emco_clone/assets/respect.jpg" alt="Respect">
+          <img src="/Emco_clone/assets/listen.jpg" alt="Listen">
+          <img src="/Emco_clone/assets/talk.jpg" alt="Talk">
+      </div>
+  </section>
+  
+  <section>
+    <div class="core-descp">
+        <div class="caring">
+            <h4>Fairness and Caring</h4>
+            <p>Doing the right thing and being committed to the success of others. Showing others by our words and actions that we genuinely care about them personally and professionally.</p>
+        </div>
+        <div class="respect">
+            <h4>Trust and Respect</h4>
+            <p>Acting with integrity and leading by example. Always doing what we say we are going to do. Being trusting and respectful of others.</p>
+        </div>
+        <div class="listen">
+            <h4>Generous Listening</h4>
+            <p>Listening carefully and deeply to ensure we fully understand each other. Being open to new ideas. Suspending our judgments in a way that encourages others to share their opinions and allows us to hear what others are truly saying.</p>
+        </div>
+        <div class="talk">
+            <h4>Straight Talk</h4>
+            <p>Respectfully saying the things we really mean in a timely manner and in the spirit of fairness and support of others. Providing feedback and being committed to having the conversations that are needed.</p>
+        </div>
+    </div>
+</section>
+
+        <footer>
+            <div class="footer-content">
+                <a href="#">Privacy</a>
+                <a href="#">Legal Notice</a>
+                <a href="#"> Accessibility</a>
+                <a href="#"> Terms</a>
+                <a href="#">Ethics and Compliance Reporting</a>
+                <a href="#">Modern Slavery Report</a>
+            </div>
+        </footer>
+    </main>
+    </body>
+    </html>

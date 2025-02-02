@@ -97,7 +97,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-app-title" content="Music app">
   <meta name="theme-color" content="#1db954">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/Emco_clone/css/style.css">
 </head>
 <body>
 <main>
@@ -105,38 +105,47 @@
         <div class="header-section">
             <img id="header-image" src="/assets/Transparent-RGB-Emco-Corporation-DB.webp">
             <ul id="menu-list">
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">HOMEOWNERS</a></li>
-                <li><a href="#">PROFESSIONALS</a></li>
-                <li><a href="#">VENDORS</a></li>
-                <li><a href="#">LOCATIONS</a></li>
-                <li><a href="#">CAREERS</a></li>
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </ul>
+              <li><a href="/Emco_clone/pages/about.html">ABOUT US</a></li>
+              <li><a href="/Emco_clone/pages/homeowners.html">HOMEOWNERS</a></li>
+              <li class="dropdown">
+                  <a href="#">PROFESSIONALS</a>
+                  <ul class="dropdown-content">
+                      <li><a href="/Emco_clone/pages/hvac-r.html">HVAC-R</a></li>
+                      <li><a href="/Emco_clone/pages/plumbing.html">Plumbing</a></li>
+                      <li><a href="/Emco_clone/pages/fire-protection.html">Fire Protection</a></li>
+                      <li><a href="/Emco_clone/pages/industrial.html">Industrial</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">VENDORS</a></li>
+              <li><a href="#">LOCATIONS</a></li>
+              <li><a href="#">CAREERS</a></li>
+              <i class="fa-solid fa-magnifying-glass"></i>
+          </ul>
+          
         </div>
     </header>
     <section>
       <div class="carousel-container">
           <div class="carousel">
               <div class="slide">
-                  <img src="/assets/pexels-falling4utah-2724749.jpg" alt="Image 1">
-                  <div class="text-overlay">Text for Image 1</div>
+                  <img src="./assets/pexels-falling4utah-2724749.jpg" alt="Image 1">
+                  <div class="text-overlay">OVER 275 LOCATIONS TO SERVE YOU</div>
               </div>
               <div class="slide">
-                  <img src="/assets/pexels-heyho-6207818.jpg" alt="Image 2">
-                  <div class="text-overlay">Text for Image 2</div>
+                  <img src="./assets/pexels-heyho-6207818.jpg" alt="Image 2">
+                  <div class="text-overlay">DELIVERY RIGHT TO YOUR HOME OR JOB SITE</div>
               </div>
               <div class="slide">
-                  <img src="/assets/pexels-heyho-6489127.jpg" alt="Image 3">
-                  <div class="text-overlay">Text for Image 3</div>
+                  <img src="./assets/pexels-heyho-6489127.jpg" alt="Image 3">
+                  <div class="text-overlay">COMMERCIAL HVAC AND REFRIGERATION SYSTEMS DESIGNED FOR YOUR SPECIFIC NEEDS</div>
               </div>
               <div class="slide">
-                  <img src="/assets/pexels-falling4utah-2724749.jpg" alt="Image 4">
-                  <div class="text-overlay">Text for Image 4</div>
+                  <img src="./assets/pexels-falling4utah-2724749.jpg" alt="Image 4">
+                  <div class="text-overlay">LET YOUR IMAGINATION SOAR</div>
               </div>
               <div class="slide">
-                  <img src="/assets/pexels-falling4utah-2724749.jpg" alt="Image 5">
-                  <div class="text-overlay">Text for Image 5</div>
+                  <img src="./assets/pexels-falling4utah-2724749.jpg" alt="Image 5">
+                  <div class="text-overlay">24/7 ACCESS TO INVENTORY, AVAILABILITY & PRICING ONLINE OR ON YOUR PHONE</div>
               </div>
           </div>
   
@@ -145,16 +154,17 @@
           <button class="arrow next" onclick="nextSlide()">&#10095;</button>
       </div>
   </section>
-    <section>
-        <div class="nav-bar ">
-          <a href="#"><img src="/assets/plumbing_icon-1.webp"></a>
-          <a href="#"><img src="/assets/HVACR_icon.webp"></a>
-          <a href="#"><img src="/assets/Industrial_icon-1.webp"></a>
-          <a href="#"><img src="/assets/waterworks_icon-1.webp"></a>
-          <a href="#"><img src="/assets/div_firepro.webp"></a>
-          <a href="#"><img src="/assets/Showroom_icon-1.webp"></a>
-        </div>
-    </section>
+  <section>
+    <div class="nav-bar">
+        <a href="#"><img src="/assets/plumbing_icon-1.webp" class="icon"> PLUMIBING</a>
+        <a href="#"><img src="/assets/HVACR_icon.webp" class="icon"> HVAC</a>
+        <a href="#"><img src="/assets/Industrial_icon-1.webp" class="icon"> INDUSTRIAL</a>
+        <a href="#"><img src="/assets/waterworks_icon-1.webp" class="icon"> WATERWORKERS</a>
+        <a href="#"><img src="/assets/div_firepro.webp" class="icon"> FIREPRO</a>
+        <a href="#"><img src="/assets/Showroom_icon-1.webp" class="icon"> SHOWROOM</a>
+    </div>
+</section>
+
     <section>
         <div class="block-container">
             <div class="signup">
@@ -164,7 +174,7 @@
             </div>
             <div class="order-online">
                 <h2>ORDER ONLINE</h2>
-                <p>Enjoy the convenience and ease of ordering your product online by</p> <p>registering an account with our online order tool! </p>
+                <p >Enjoy the convenience and ease of ordering your product online </p> <p>by registering an account with our online order tool! </p>
                 <button>GET STARTED!</button>
             </div>
         </div>
@@ -189,18 +199,16 @@
       </div>
     </section>
     <footer>
-      <section>
-        <ul>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Legal Notice</a></li>
-          <li><a href="#"> Accessibility</a></li>
-          <li><a href="#"> Terms</a></li>
-          <li><a href="#">Ethics and Compliance Reporting</a></li>
-          <li><a href="#">Modern Slavery Report</a></li>
-        </ul>
-      </section>
-    </footer>
+      <div class="footer-content">
+          <a href="#">Privacy</a>
+          <a href="#">Legal Notice</a>
+          <a href="#"> Accessibility</a>
+          <a href="#"> Terms</a>
+          <a href="#">Ethics and Compliance Reporting</a>
+          <a href="#">Modern Slavery Report</a>
+      </div>
+  </footer>
 </main>
-<script src="/script.js"></script> <!-- External JavaScript -->
+<script src="/Emco_clone/script.js"></script> <!-- External JavaScript -->
 </body>
 </html>
